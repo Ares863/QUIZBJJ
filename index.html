@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Jiu-Jitsu</title>
+  <link rel="stylesheet" href="quiz.css"/>
+</head>
+<body>
+  <div id="app">
+    <div id="intro" class="screen active">
+      <h1>Como o Jiu-Jitsu chegou ao Brasil</h1>
+      <p>O Jiu-Jitsu tem origens no Japão, onde era praticado por samurais como forma de defesa pessoal sem armas. No começo do século XX, o mestre japonês Mitsuyo Maeda veio ao Brasil e ensinou sua arte para Carlos Gracie. Carlos, junto com seus irmãos, principalmente Hélio Gracie, adaptou e aprimorou as técnicas, focando em alavancas e movimentos que favorecem o lutador mais leve. Assim nasceu o Brazilian Jiu-Jitsu (BJJ), uma arte marcial que se espalhou pelo mundo e se tornou essencial em competições como o MMA.</p>
+      <button onclick="startQuiz()">Começar Quiz</button>
+    </div>
+    <div id="quiz" class="screen">
+      <div id="question-container">
+        <h2 id="question"></h2>
+        <div id="answers"></div>
+        <button id="submit-answer" onclick="checkAnswer()">Ver Resposta</button>
+      </div>
+    </div>
+    <div id="feedback" class="screen">
+      <h2 id="feedback-message"></h2>
+      <button id="feedback-button" onclick="handleFeedbackAction()">Continuar</button>
+    </div>
+    <div id="final" class="screen">
+      <h2>Quiz Finalizado!</h2>
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Refazer Quiz</button>
+    </div>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>
