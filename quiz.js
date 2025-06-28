@@ -190,13 +190,17 @@ function checkAnswer() {
   const correct = questions[current].correct;
   if (selected === correct) {
     document.getElementById("feedback-message").textContent = "Você acertou!";
+    document.getElementById("feedback-message").style.color = "limegreen"; // muda a cor da fonte
     document.getElementById("feedback").style.background = "#004400";
     document.getElementById("feedback-button").textContent = "Próxima Pergunta";
+    document.getElementById("feedback-button").style.background = "#228B22";
     score++;
   } else {
     document.getElementById("feedback-message").textContent = "Você errou!";
+    document.getElementById("feedback-message").style.color = "red"; // mantém a cor de erro
     document.getElementById("feedback").style.background = "#440000";
     document.getElementById("feedback-button").textContent = "Tente novamente";
+    document.getElementById("feedback-button").style.background = "#8B0000";
   }
 }
 
