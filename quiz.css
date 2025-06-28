@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90dvh;
+  min-height: 100dvh;
 }
 
 .screen {
@@ -31,6 +31,7 @@ h1, h2 {
 
 button {
   padding: 10px 20px;
+  margin: 10px 0;
   font-size: 16px;
   background: #ff3333;
   border: none;
